@@ -2,9 +2,11 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import joblib
 import pandas as pd
+from fastapi.middleware.cors import CORSMiddleware 
 
 # Initialize the FastAPI app
 app = FastAPI(title="Housing Price Predictor API")
+app.add_middleware(CORSMiddleware,allow_origins=["*"],allow_methods=["POST"],allow_headers=["Content-Type"])
 
 # Load the saved pipeline (do this outside the endpoint so it only loads once)
 model = joblib.load('housing_model.pkl')

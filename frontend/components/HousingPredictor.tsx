@@ -136,7 +136,7 @@ export default function HousingPredictor() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<PredictionResult | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [apiUrl, setApiUrl] = useState("https://your-model.hf.space");
+  const [apiUrl, setApiUrl] = useState("http://127.0.0.1:8000");
   const resultRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (key: keyof FormValues, value: string) => {

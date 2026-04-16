@@ -5,4 +5,4 @@ RUN pip install --upgrade pip
 RUN pip install -v --prefer-binary --default-timeout=1000 --no-cache-dir -r requirements.txt
 COPY . .
 EXPOSE 8000
-CMD ["uvicorn","app:app","--host","0.0.0.0","--port","7860"]
+CMD ["uvicorn","app:app","--host","0.0.0.0","--port","8000"]
