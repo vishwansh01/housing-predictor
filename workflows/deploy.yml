@@ -20,4 +20,4 @@ jobs:
           git checkout -b main
           git add .
           git commit -m "Automated backend sync"
-          git push --force https://YOUR_HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/YOUR_HF_USERNAME/california-housing-api main
+          git push --force https://vishwansh01:$HF_TOKEN@huggingface.co/spaces/vishwansh01/housing-api main
