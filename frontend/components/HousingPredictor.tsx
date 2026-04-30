@@ -309,7 +309,7 @@ export default function HousingPredictor() {
         </header>
 
         {/* API URL Config */}
-        <div
+        {/* <div
           className="card mb-8 animate-fade-up"
           style={{
             padding: "1.25rem 1.5rem",
@@ -317,7 +317,7 @@ export default function HousingPredictor() {
             opacity: 0,
           }}
         >
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <span
               style={{
                 fontFamily: "var(--font-mono)",
@@ -355,8 +355,8 @@ export default function HousingPredictor() {
                 /predict
               </span>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */} 
 
         {/* Main Form Grid */}
         <div
