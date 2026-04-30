@@ -1,5 +1,9 @@
 # 🏠 California Housing Price Predictor: Full-Stack ML App
 
+[![Frontend Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://housing-predictor-nine.vercel.app/)
+[![Backend API](https://img.shields.io/badge/API-Hugging_Face-yellow?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/vishwansh01/housing-api)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-blue?style=for-the-badge&logo=githubactions)](#)
+
 A full-stack, cloud-connected machine learning web application that predicts California housing prices in real-time based on custom user inputs. 
 
 This project demonstrates a modern, decoupled architecture using a **Next.js** frontend communicating with a containerized **FastAPI** machine learning backend.
@@ -8,10 +12,6 @@ This project demonstrates a modern, decoupled architecture using a **Next.js** f
 * **🐳 Dockerized Architecture:** The FastAPI machine learning backend is completely containerized. It runs inside a custom Docker environment on Hugging Face Spaces, ensuring absolute consistency between development and production.
 * **⚙️ Automated CI/CD Pipeline:** Built with GitHub Actions, the pipeline automatically packages and deploys backend updates. It uses Git Large File Storage (LFS) to safely push heavy `.pkl` models and strictly triggers only when the `backend/` directory is modified, optimizing server compute time.
 * **🔗 Decoupled Systems:** A modern separation of concerns featuring a serverless Next.js edge frontend securely fetching data from the dedicated Python backend.
-
-[![Frontend Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://housing-predictor-nine.vercel.app/)
-[![Backend API](https://img.shields.io/badge/API-Hugging_Face-yellow?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/vishwansh01/housing-api)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-blue?style=for-the-badge&logo=githubactions)](#)
 
 ---
 
